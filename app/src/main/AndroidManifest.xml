@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hcp.wo"
+    android:versionCode="143"
+    android:versionName="1.4.3" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        tools:replace="android:icon, android:theme"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hcp.wo.LoginActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hcp.wo.MainActivity"/>
+        <activity android:name="com.hcp.wo.AppSettingActivity"/>
+        <activity android:name="com.hcp.wo.QueryMenuActivity"/>
+        <activity android:name="com.hcp.wo.IntrawareMenuActivity"/>
+        <activity android:name="com.hcp.wo.StockTakingMenuActivity"/>
+        <activity android:name="com.hcp.biz.query.activity.TransactionQueryActivity"/>
+        <activity android:name="com.hcp.biz.query.activity.IssueQueryActivity"/>
+        <activity android:name="com.hcp.biz.query.activity.ReturnQueryActivity"/>
+        <activity android:name="com.hcp.biz.query.activity.CompletionQueryActivity"/>
+        <activity android:name="com.hcp.biz.query.activity.CompletionReturnQueryActivity"/>
+        <activity android:name="com.hcp.biz.query.activity.OperationTransactionQueryActivity"/>
+        <activity android:name="com.hcp.wo.BizAuthorityActivity"/>
+        <activity android:name="com.hcp.wo.SubInventoryAuthorityActivity"/>
+        <activity android:name="com.hcp.query.activity.WoQueryActivity"/>
+        <activity android:name="com.hcp.biz.query.activity.BaseTransactionQueryActivity"/>
+        <activity android:name="com.hcp.query.activity.ComponentQueryActivity"/>
+        <activity android:name="com.hcp.query.activity.ComponentBackupQueryActivity"/>
+        <activity android:name="com.hcp.query.activity.StandingCorpQueryActivity"/>
+        <activity android:name="com.hcp.query.activity.OperationQueryActivity"/>
+        <activity android:name="com.hcp.query.activity.WipRecordQueryActivity"/>
+        <activity android:name="com.hcp.biz.activity.MaterialTransferActivity"/>
+        <activity android:name="com.hcp.biz.activity.MaterialIssueActivity"/>
+        <activity android:name="com.hcp.biz.activity.MaterialReturnActivity"/>
+        <activity android:name="com.hcp.biz.activity.CompletionActivity"/>
+        <activity android:name="com.hcp.biz.activity.CompletionReturnActivity"/>
+        <activity android:name="com.hcp.biz.activity.WorkingProcedureTransferActivity"/>
+        <activity android:name="com.hcp.biz.activity.SubInventoryTransactionActivity"/>
+        <activity android:name="com.hcp.biz.activity.SubInventoryTransactionReturnActivity"/>
+        <activity android:name="com.hcp.biz.activity.VirturalCompletionActivity"/>
+        <activity android:name="com.hcp.biz.activity.BatchTransactionActivity"/>
+        <activity android:name="com.hcp.biz.activity.SpecificIssueActivity"/>
+        <activity android:name="com.hcp.wo.FuncChooseActivity"/>
+        <activity android:name="com.hcp.intraware.biz.activity.ISPAccountAliasReceiptActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPSubInventorySelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.activity.OrganizationActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPLocatorSelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPBillSelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.activity.ISPAccountAliasIssueActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPReasonSelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.activity.ISPWipIssueActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPWipSelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPComponentSelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPWipIssueSubInventorySelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.activity.ISPWipReturnActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPWipReturnSubInventorySelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPWipReturnLocatorSelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.activity.ISPSubInventoryTransferActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPSubInventoryTransferComponentSelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPSubInventoryTransferSubInventorySelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPSubInventoryTransferLocatorSelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPSubInventoryTransferProjectNoSelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPSubInventoryTransferLotNoSelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPSubInventoryTransferWipSelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.activity.ISPPurchaseReceiveActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPPurchaseReceiveOrderSelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPPurchaseReceiveSubInventorySelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.select.activity.ISPPurchaseReceiveLocatorSelectActivity"/>
+        <activity android:name="com.hcp.intraware.biz.activity.ISPWipQueryActivity"/>
+        <activity android:name="com.hcp.wo.TestActivity"/>
+        <activity android:name="com.hcp.stocktaking.biz.EnteringActivity"/>
+        <activity android:name="com.hcp.stocktaking.biz.ModifyActivity"/>
+        <activity android:name="com.hcp.stocktaking.biz.GetSnapShotActivity"/>
+        <activity android:name="com.hcp.stocktaking.biz.InventoryCompareActivity"/>
+        <activity android:name="com.hcp.stocktaking.biz.PalletActivity"/>
+    </application>
+
+</manifest>

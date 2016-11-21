@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HCP</string>
+    
+    <!-- Common -->
+    <string name="start_time">起始时间:</string>
+    <string name="end_time">结束时间:</string>
+    
+    <string-array name="lot_control">
+        <item>完全控制</item>
+        <item>不控制</item>
+    </string-array>
+    
+    <string name="request_error_authority">交易锁定，请稍候再试，或仅进行查询操作!</string>
+    
+    <!-- Common Business -->
+    <string name="winp_entity_name">工&#160;&#160;单&#160;&#160;号:</string>
+    <string name="component_code">组件编号:</string>
+    
+    <!-- Login -->
+    <string name="login_user">账户:</string>
+    <string name="login_password">密码:</string>
+    <string name="login_login">登录</string>
+    <string name="login_settings">设置</string>
+    <string name="login_error_on_empty_field">用户名或密码不得为空!</string>
+    <string name="login_error_on_check">用户名密码验证失败!</string>
+    <string name="login_error_on_get_login_user">获取登录用户失败!</string>
+    <string name="login_on_progress">登录中,请稍候&#8230;</string>
+
+    <!-- FuncChoose -->
+    <string name="func_choose_title">功&#160;能&#160;选&#160;择</string>
+    <string name="func_choose_wip_entity">交易</string>
+    <string name="func_choose_query">查询</string>
+    <string name="func_choose_intraware">内协</string>
+    <string name="func_choose_stock_taking">盘点</string>
+    
+    <!-- Main -->
+    <string name="main_title">工&#160;单&#160;操&#160;作</string>
+    <string name="main_material_transfer">工单移料</string>
+    <string name="main_material_issue">工单领料</string>
+    <string name="main_material_return">工单退料</string>
+    <string name="main_finish">工单完工</string>
+    <string name="main_working_procedure_transfer">工序移动</string>
+
+    <!-- Query Menu -->
+    <string name="query_menu_title">工&#160;单&#160;查&#160;询</string>
+    <string name="main_component_query">组件查询</string>
+    <string name="main_standing_corp_query">现有量查询</string>
+    <string name="main_wo_query">工单查询</string>
+    <string name="main_component_backup_query">备料查询</string>
+    <string name="main_wip_transaction_query">交易查询</string>
+    <string name="main_operation_query">工序查询</string>
+
+    <!-- Intraware Menu -->
+    <string name="intraware_menu_title">内&#160;&#160;协</string>
+    <string name="intraware_group_change">组织切换</string>
+    <string name="intraware_in">账户别名交易(杂入)</string>
+    <string name="intraware_out">账户别名交易(杂出)</string>
+    <string name="intraware_issue">生产领料</string>
+    <string name="intraware_return">生产退料</string>
+    <string name="intraware_move">项目转移</string>
+    <string name="intraware_aar">采购接收</string>
+    <string name="intraware_compare">工单对照关系</string>
+
+    <!-- Stock Taking -->
+    <string name="stock_taking_menu_title">盘&#160;&#160;点</string>
+    <string name="stock_taking_import">盘点差异导入</string>
+    <string name="stock_taking_compare">对比盘点结果</string>
+    <string name="stock_taking_entering">录入盘点卡</string>
+    <string name="stock_taking_modify">修改盘点卡</string>
+    <string name="stock_taking_snapshot">取得盘点快照</string>
+    <string name="stock_taking_pallet">栈板标签</string>
+
+    <!-- Entering -->
+    <string name="entering_title">录&#160;入&#160;盘&#160;点&#160;卡</string>
+    <string name="entering_barcode">条&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码:</string>
+    <string name="entering_project_no">项&#160;&#160;目&#160;&#160;号:</string>
+    <string name="entering_lot_no">批&#160;&#160;次&#160;&#160;号:</string>
+    <string name="entering_item_no">料件编号:</string>
+    <string name="entering_item_name">料件名称:</string>
+    <string name="entering_item_uom">单&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+    <string name="entering_item_desc">料件型号:</string>
+    <string name="entering_quantity">数&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;量:</string>
+    <string name="entering_subinventory">子&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;库:</string>
+    <string name="entering_locator">货&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+
+    <!-- Modify -->
+    <string name="modify_title">修&#160;改</string>
+
+    <!-- Inventory Compare -->
+    <string name="inventory_compare_title">对&#160;比&#160;盘&#160;点&#160;结&#160;果</string>
+    <string name="inventory_compare_subinventory">子&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;库:</string>
+    <string name="inventory_compare_item_no">料件编号:</string>
+    <string name="inventory_compare_project_no">项&#160;&#160;目&#160;&#160;号:</string>
+    <string name="inventory_compare_lot_no">批&#160;&#160;次&#160;&#160;号:</string>
+    <string name="inventory_compare_locator">货&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+
+    <string-array name="operations">
+        <item>工单移料</item>
+        <item>工单完工</item>
+        <item>工单领料</item>
+        <item>完工退回</item>
+        <item>工单退料</item>
+        <item>工序移动</item>
+        <item>子库转移</item>
+        <item>子库转移退料</item>
+        <item>条码子库转移</item>
+        <item>虚拟完工</item>
+        <item>批量领料</item>
+        <item>批量退料</item>
+        <item>特定组件发料</item>
+    </string-array>
+    
+    <!-- Settings -->
+    <string name="settings_title">应用设置</string>
+    <string name="settings_ip">服务器&#160;IP:</string>
+    <string name="settings_port">端口号:</string>
+    <string name="settings_printer_ip">打印机&#160;IP:</string>
+    <string name="settings_printer_port">打印机端口:</string>
+    <string name="settings_print_enable">开启打印功能</string>
+    
+    <!-- Authority -->
+    <string name="authority_title">权限管理</string>
+    <string name="authority_user">用户名:</string>
+    <string name="authority_add">添加</string>
+    
+    <!-- Sub_Inventory Authority -->
+    <string name="sia_title">子库管理</string>
+    <string name="sia_user">用户名:</string>
+    <string name="sia_add">添加</string>
+    
+    <!-- Material Transfer -->
+    <string name="mt_title">工&#160;单&#160;移&#160;料</string>
+    <string name="mt_original">原始工单</string>
+    <string name="mt_charging">投料工单</string>
+    <string name="mt_sub_inventory">子&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;库:</string>
+    <string name="mt_ori_code">原工单号:</string>
+    <string name="mt_ori_code_charging">工&#160;&#160;单&#160;&#160;号:</string>
+    <string name="mt_component_code">组件编号:</string>
+    <string name="mt_component_name">组件名称:</string>
+    <string name="mt_provide_qty">已发数量:</string>
+    <string name="mt_movable_qty">可移数量:</string>
+    <string name="mt_component_qty">组件数量:</string>
+    <string name="mt_moved_qty">移动数量:</string>
+    <string name="mt_submit">提交</string>
+    
+    <!-- Material Issue -->
+    <string name="mi_title">工&#160;单&#160;领&#160;料</string>
+    <string name="mi_ori_wo">工单</string>
+    <string name="mi_sub_inventory">子&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;库:</string>
+    <string name="mi_ori_code">工&#160;&#160;单&#160;&#160;号:</string>
+    <string name="mi_class_code">工单类型:</string>
+    <string name="mi_start_time">开始时间:</string>
+    <string name="mi_complete_time">完成时间:</string>
+    <string name="mi_component_code">组件编号:</string>
+    <string name="mi_component_name">组件名称:</string>
+    <string name="mi_received_qty">已发数量:</string>
+    <string name="mi_unreceived_qty">未发数量:</string>
+    <string name="mi_issued_type">供应方式:</string>
+    <string name="mi_warehouse_location">仓库货位:</string>
+    <string name="mi_standing_crop">现有数量:</string>
+    <string name="mi_issued_qty">发料数量:</string>
+    <string name="mi_issued_lot">批次:</string>
+    <string name="mi_issued_lot_qty">数量:</string>
+    
+    <!-- Material Return -->
+    <string name="mr_title">工&#160;单&#160;退&#160;料</string>
+    <string name="mr_ori_wo">工单</string>
+    <string name="mr_subinventory">子&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;库:</string>
+    <string name="mr_ori_code">工&#160;&#160;单&#160;&#160;号:</string>
+    <string name="mr_class_code">工单类型:</string>
+    <string name="mr_start_time">开始时间:</string>
+    <string name="mr_complete_time">完成时间:</string>
+    <string name="mr_component_code">组件编号:</string>
+    <string name="mr_component_name">组件名称:</string>
+    <string name="mr_issued_qty">已发数量:</string>
+    <string name="mr_unissued_qty">未发数量:</string>
+    <string name="mr_issued_type">供应方式:</string>
+    <string name="mr_return_qty">退料数量:</string>
+    
+    <!-- Completion -->
+    <string name="comp_title">工&#160;单&#160;完&#160;工</string>
+    <string name="comp_ori_wo">工单</string>
+    <string name="comp_sub_inventory">子&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;库:</string>
+    <string name="comp_ori_code">工&#160;&#160;单&#160;&#160;号:</string>
+    <string name="comp_class_code">工单类型:</string>
+    <string name="comp_start_time">开始时间:</string>
+    <string name="comp_completion_time">完成时间:</string>
+    <string name="comp_assembly">制品号码:</string>
+    <string name="comp_assembly_name">制品名称:</string>
+    <string name="comp_completed_qty">已&#160;&#160;完&#160;&#160;工:</string>
+    <string name="comp_rest_qty">剩余数量:</string>
+    <string name="comp_remark">工单备注:</string>
+    <string name="comp_board_code">机台号码:</string>
+    <string name="comp_warehouse_location">仓库货位:</string>
+    <string name="comp_completion_qty">完工数量:</string>
+    
+    <!-- Completion Return-->
+    <string name="comp_return_title">完&#160;工&#160;退&#160;料</string>
+    <string name="comp_return_ori_wo">工单</string>
+    <string name="comp_return_sub_inventory">子&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;库:</string>
+    <string name="comp_return_ori_code">工&#160;&#160;单&#160;&#160;号:</string>
+    <string name="comp_return_class_code">工单类型:</string>
+    <string name="comp_return_start_time">开始时间:</string>
+    <string name="comp_return_completion_time">完成时间:</string>
+    <string name="comp_return_assembly">制品号码:</string>
+    <string name="comp_return_assembly_name">制品名称:</string>
+    <string name="comp_return_completed_qty">已&#160;&#160;完&#160;&#160;工:</string>
+    <string name="comp_return_rest_qty">剩余数量:</string>
+    <string name="comp_return_remaining">现&#160;&#160;有&#160;&#160;量:</string>
+    <string name="comp_return_remark">工单备注:</string>
+    <string name="comp_return_board_code">机台号码:</string>
+    <string name="comp_return_warehouse_location">仓库货位:</string>
+    <string name="comp_return_transcation_qty">退回数量:</string>
+    
+    <!-- Working Procedure Transfer -->
+    <string name="wpt_title">工&#160;序&#160;移&#160;动</string>
+    <string name="wpt_wo">工单</string>
+    <string name="wpt_ori_wo">工&#160;&#160;单&#160;&#160;号:</string>
+    <string name="wpt_class_code">工单类型:</string>
+    <string name="wpt_start_time">开始时间:</string>
+    <string name="wpt_end_time">完成时间:</string>
+    <string name="wpt_transaction_type">处理类型:</string>
+    <string name="wpt_procedure">工序</string>
+    <string name="wpt_transfer_qty">移动数量:</string>
+    <string name="wpt_serial_no">序&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;号</string>
+    <string name="wpt_start">初&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;始:</string>
+    <string name="wpt_end">目&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;标:</string>
+    <string name="wpt_state">状&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;态</string>
+    <string-array name="wpt_states">
+        <item>排队</item>
+        <item>运行</item>
+        <item>移动</item>
+        <item>拒绝</item>
+    </string-array>
+    
+    <string-array name="wpt_transaction_types">
+        <item>移动</item>
+        <item>完成</item>
+        <item>退货</item>
+    </string-array>
+    
+    <string-array name="wpt_serial">
+        <item>1</item>
+        <item>10</item>
+    </string-array>
+    
+    <!-- Sub Inventory Transaction -->
+    <string name="sbt_segment_barcode">条&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码:</string>
+    <string name="sbt_title">子&#160;库&#160;转&#160;移</string>
+    <string name="sbt_barcode_title">条&#160;码&#160;子&#160;库&#160;转&#160;移</string>
+    <string name="sbt_segment_code">物料编码:</string>
+    <string name="sbt_segment_name">物料名称:</string>
+    <string name="sbt_sub_inventroy_from">原始子库:</string>
+    <string name="sbt_locator_from">原始货位:</string>
+    <string name="sbt_project_number_from">项&#160;&#160;目&#160;&#160;号:</string>
+    <string name="sbt_remaining">现&#160;&#160;有&#160;&#160;量:</string>
+    <string name="sbt_sub_inventroy_to">目标子库:</string>
+    <string name="sbt_locator_to">目标货位:</string>
+    <string name="sbt_project_number_to">项&#160;&#160;目&#160;&#160;号:</string>
+    <string name="sbt_transaction_quantity">移动数量:</string>
+    
+    <!-- Virtual Completion -->
+    <string name="vc_title">虚&#160;拟&#160;完&#160;工</string>
+    <string name="vc_sub_inventory">子&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;库:</string>
+    <string name="vc_wip_entity_from">前道工单:</string>
+    <string name="vc_class_code_from">工单类型:</string>
+    <string name="vc_start_time_from">开始时间:</string>
+    <string name="vc_completion_time_from">完成时间:</string>
+    <string name="vc_segment">制品号码:</string>
+    <string name="vc_wip_entity_to">后道工单:</string>
+    <string name="vc_class_code_to">工单类型:</string>
+    <string name="vc_start_time_to">开始时间:</string>
+    <string name="vc_completion_time_to">完成时间:</string>
+    <string name="vc_transaction_quantity">发料数量:</string>
+    
+    <!-- Business Query -->
+    <string name="biz_query_title">交&#160;易&#160;查&#160;询</string>
+    <string name="biz_query_wip_name">工&#160;&#160;单&#160;&#160;号:</string>
+    <string name="biz_query_component">组件编号:</string>
+    
+    <!-- Business Operation Query -->
+    <string name="bo_query_title">交&#160;易&#160;查&#160;询</string>
+    <string name="bo_query_wip_name">工&#160;&#160;单&#160;&#160;号:</string>
+    <string name="bo_query_component">处理类型:</string>
+    
+    <!-- Work Order Query -->
+    <string name="wo_query_title">工&#160;单&#160;查&#160;询</string>
+    <string name="wo_query_wip_name">工&#160;&#160;单&#160;&#160;号:</string>
+    <string name="wo_query_component">组件编号:</string>
+    <string name="wo_query_component_name">料件名称:</string>
+    
+    <!-- Standing Corp Query -->
+    <string name="sc_query_title">现&#160;有&#160;量&#160;查&#160;询</string>
+    <string name="sc_query_sub_inventory">子&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;库:</string>
+    <string name="sc_query_component">料&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;号:</string>
+    <string name="sc_query_component_name">料件名称:</string>
+
+    <!-- Operation Query -->
+    <string name="operation_query_title">工&#160;序&#160;查&#160;询</string>
+    <string name="operation_query_wip_name">工单号:</string>
+    
+    <!-- Component Query -->
+    <string name="component_query_title">组&#160;件&#160;查&#160;询</string>
+    <string name="component_query_component">组件编号:</string>
+    
+    <!-- Component Backup Query -->
+    <string name="cbq_title">备&#160;料&#160;查&#160;询</string>
+    <string name="cbq_component_code">组件编号:</string>
+    <string name="cbq_organization_code">组&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;织:</string>
+    
+    <!-- Wip Record Query -->
+    <string name="wrq_title">交&#160;易&#160;查&#160;询</string>
+    <string name="wrq_wip_entity_name">工&#160;&#160;单&#160;&#160;号:</string>
+    <string name="wrq_segment">料&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;号:</string>
+    <string name="wrq_sub_inventory">子&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;库:</string>
+    
+    <!-- LotNo Transaction-->
+    <string name="bt_wip_name">工&#160;&#160;单&#160;&#160;号</string>
+    
+    <!-- Specific Issue-->
+    <string name="si_title">特&#160;定&#160;组&#160;件&#160;发&#160;料</string>
+    <string name="si_sub_inventory">子&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;库:</string>
+    <string name="si_wip_name">工&#160;&#160;单&#160;&#160;号:</string>
+    <string name="si_class_code">工单类型:</string>
+    <string name="si_start_time">开始时间:</string>
+    <string name="si_completion_time">完成时间:</string>
+    <string name="si_component_code">组件编号:</string>
+    <string name="si_component_name">组件名称:</string>
+    <string name="si_remaining_qty">现&#160;&#160;有&#160;&#160;量:</string>
+    <string name="si_transaction_qty">发料数量:</string>
+    <string name="si_locator">货&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+    
+    <string-array name="bt_title">
+        <item>批&#160;量&#160;领&#160;料</item>
+        <item>批&#160;量&#160;退&#160;料</item>
+    </string-array>
+
+    <!-- Intraware Reveive-->
+    <string name="intraware_aar_title">账户别名交易-杂入</string>
+    <string name="intraware_aar_org">组&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;织:</string>
+    <string name="intraware_aar_date">交易日期:</string>
+    <string name="intraware_aar_trans_type">交易类型:</string>
+    <string name="intraware_aar_ori_type">来源类型:</string>
+    <string name="intraware_aar_trans_ori">交易来源:</string>
+    <string name="intraware_aar_componnet_code">料件编号:</string>
+    <string name="intraware_aar_sub_inventory">子&#160;&#160;库&#160;&#160;存:</string>
+    <string name="intraware_aar_locator">货&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+    <string name="intraware_aar_project_no">项&#160;&#160;目&#160;&#160;号:</string>
+    <string name="intraware_aar_batch">批&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;次:</string>
+    <string name="intraware_aar_uom">单&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+    <string name="intraware_aar_quantity">数&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;量:</string>
+    <string name="intraware_aar_location">地&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;点:</string>
+    <string name="intraware_aar_reason">原&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;因:</string>
+    <string name="intraware_aar_ori_bill">单&#160;&#160;据&#160;&#160;号:</string>
+
+    <!-- Intraware Issue-->
+    <string name="intraware_aai_title">账户别名交易-杂出</string>
+    <string name="intraware_aai_org">组&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;织:</string>
+    <string name="intraware_aai_date">交易日期:</string>
+    <string name="intraware_aai_trans_type">交易类型:</string>
+    <string name="intraware_aai_ori_type">来源类型:</string>
+    <string name="intraware_aai_trans_ori">交易来源:</string>
+    <string name="intraware_aai_componnet_code">料件编号:</string>
+    <string name="intraware_aai_sub_inventory">子&#160;&#160;库&#160;&#160;存:</string>
+    <string name="intraware_aai_locator">货&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+    <string name="intraware_aai_project_no">项&#160;&#160;目&#160;&#160;号:</string>
+    <string name="intraware_aai_batch">批&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;次:</string>
+    <string name="intraware_aai_uom">单&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+    <string name="intraware_aai_quantity">数&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;量:</string>
+    <string name="intraware_aai_location">地&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;点:</string>
+    <string name="intraware_aai_reason">原&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;因:</string>
+    <string name="intraware_aai_ori_bill">单&#160;&#160;据&#160;&#160;号:</string>
+
+    <!-- Intraware Wip Issue-->
+    <string name="intraware_wi_title">ISP 工单领料</string>
+    <string name="intraware_wi_org">组&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;织:</string>
+    <string name="intraware_wi_wip">工&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;单:</string>
+    <string name="intraware_wi_componnet_code">料件编号:</string>
+    <string name="intraware_wi_operation">工序编号:</string>
+    <string name="intraware_wi_sub_inventory">子&#160;&#160;库&#160;&#160;存:</string>
+    <string name="intraware_wi_uom">单&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+    <string name="intraware_wi_locator">货&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+    <string name="intraware_wi_date">日&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;期:</string>
+    <string name="intraware_wi_project_no">项&#160;&#160;目&#160;&#160;号:</string>
+    <string name="intraware_wi_quantity">数&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;量:</string>
+    <string name="intraware_wi_batch">批&#160;&#160;次&#160;&#160;号:</string>
+
+    <!-- Intraware Wip Return-->
+    <string name="intraware_wr_title">ISP 工单退料</string>
+    <string name="intraware_wr_org">组&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;织:</string>
+    <string name="intraware_wr_wip">工&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;单:</string>
+    <string name="intraware_wr_componnet_code">料件编号:</string>
+    <string name="intraware_wr_operation">工序编号:</string>
+    <string name="intraware_wr_sub_inventory">子&#160;&#160;库&#160;&#160;存:</string>
+    <string name="intraware_wr_uom">单&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+    <string name="intraware_wr_locator_project_no">货位项目:</string>
+    <string name="intraware_wr_locator_rack">货位Rack:</string>
+    <string name="intraware_wr_date">日&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;期:</string>
+    <string name="intraware_wr_project_no">项&#160;&#160;目&#160;&#160;号:</string>
+    <string name="intraware_wr_quantity">数&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;量:</string>
+    <string name="intraware_wr_batch">批&#160;&#160;次&#160;&#160;号:</string>
+
+    <!-- Intraware SubInventory Transfer-->
+    <string name="intraware_st_title">ISP 项目转移</string>
+    <string name="intraware_st_org">组&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;织:</string>
+    <string name="intraware_st_date">日&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;期:</string>
+    <string name="intraware_st_componnet_code">料件编号:</string>
+    <string name="intraware_st_sub_inventory_from">原始子库:</string>
+    <string name="intraware_st_locator_from">原始货位:</string>
+    <string name="intraware_st_locator_project_no_from">原始货位项目号:</string>
+    <string name="intraware_st_lot_no">批&#160;&#160;次&#160;&#160;号:</string>
+    <string name="intraware_st_sub_inventory_to">目标子库:</string>
+    <string name="intraware_st_locator_to">目标货位:</string>
+    <string name="intraware_st_locator_project_no_to">目标货位项目号:</string>
+    <string name="intraware_st_quantity">数&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;量:</string>
+    <string name="intraware_st_wip">工&#160;&#160;单&#160;&#160;号:</string>
+
+    <!-- Intraware Purchase Receive-->
+    <string name="intraware_purchase_receive_title">ISP 采购收料</string>
+    <string name="intraware_purchase_receive_order">采购订单:</string>
+    <string name="intraware_purchase_receive_line">订单行号:</string>
+    <string name="intraware_purchase_receive_organization">库存组织:</string>
+    <string name="intraware_purchase_receive_subinventory">子库编号:</string>
+    <string name="intraware_purchase_receive_locator">货&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+    <string name="intraware_purchase_receive_component">料件编号:</string>
+    <string name="intraware_purchase_receive_component_description">料件名称:</string>
+    <string name="intraware_purchase_receive_shipment">发&#160;&#160;运&#160;&#160;号:</string>
+    <string name="intraware_purchase_receive_shipment_line">发运行号:</string>
+    <string name="intraware_purchase_receive_uom">单&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+    <string name="intraware_purchase_receive_lotno">批&#160;&#160;次&#160;&#160;号:</string>
+    <string name="intraware_purchase_receive_project_no">项&#160;&#160;目&#160;&#160;号:</string>
+    <string name="intraware_purchase_receive_date">收料日期:</string>
+    <string name="intraware_purchase_receive_barcode">条码标签:</string>
+    <string name="intraware_purchase_receive_receive_quantity">收料数量:</string>
+    <string name="intraware_purchase_receive_purchase_quantity">采购数量:</string>
+    <string name="intraware_purchase_receive_received_quantity">已收数量:</string>
+
+    <!-- Intraware Organization-->
+    <string name="intraware_organization_title">组织切换</string>
+    <string name="intraware_organization_current">当前组织:</string>
+    <string name="intraware_organization_list">组织列表:</string>
+    <string name="intraware_organization_bind">绑定</string>
+    <string name="intraware_organization_refresh">刷新</string>
+
+    <!-- ISP SubInventory Select-->
+    <string name="isp_subinventory_select_title">子库选择</string>
+    <string name="isp_subinventory_select_subinventory">子库存名称</string>
+    <string name="isp_subinventory_select_description">说明</string>
+    <string name="isp_subinventory_select_confirm">确定</string>
+    <string name="isp_subinventory_select_refresh">刷新</string>
+
+    <!-- ISP Wip Issue SubInventory Select-->
+    <string name="isp_wip_issue_subinventory_select_title">子库选择</string>
+    <string name="isp_wip_issue_subinventory_select_component">组件</string>
+    <string name="isp_wip_issue_subinventory_select_component_description">组件描述</string>
+    <string name="isp_wip_issue_subinventory_select_uom">单位</string>
+    <string name="isp_wip_issue_subinventory_select_subinventory">子库存</string>
+    <string name="isp_wip_issue_subinventory_select_locator">货位</string>
+    <string name="isp_wip_issue_subinventory_select_lotno">批次号</string>
+    <string name="isp_wip_issue_subinventory_select_transaction_quantity">可用数量</string>
+    <string name="isp_wip_issue_subinventory_select_confirm">确定</string>
+    <string name="isp_wip_issue_subinventory_select_query">查询</string>
+
+    <!-- ISP Wip Return SubInventory Select-->
+    <string name="isp_wip_return_subinventory_select_title">子库选择</string>
+    <string name="isp_wip_return_subinventory_select_subinventory">子库存</string>
+    <string name="isp_wip_return_subinventory_select_confirm">确定</string>
+    <string name="isp_wip_return_subinventory_select_query">查询</string>
+
+    <!-- ISP Wip Return Locator Select-->
+    <string name="isp_wip_return_locator_select_title">货位选择</string>
+    <string name="isp_wip_return_locator_select_subinventory">子库存</string>
+    <string name="isp_wip_return_locator_select_locator">排列位</string>
+    <string name="isp_wip_return_locator_select_locator_description">排列位说明</string>
+    <string name="isp_wip_return_locator_select_confirm">确定</string>
+    <string name="isp_wip_return_locator_select_query">查询</string>
+
+    <!-- ISP Reason Select-->
+    <string name="isp_reason_select_title">原因选择</string>
+    <string name="isp_reason_select_name">原因名称</string>
+    <string name="isp_reason_select_description">说明</string>
+    <string name="isp_reason_select_confirm">确定</string>
+    <string name="isp_reason_select_query">查询</string>
+
+    <!-- ISP SubInventory Transfer Component Select-->
+    <string name="isp_subinventory_transfer_component_select_title">料件选择</string>
+    <string name="isp_subinventory_transfer_component_select_component">料件</string>
+    <string name="isp_subinventory_transfer_component_select_component_description">料件说明</string>
+    <string name="isp_subinventory_transfer_component_select_confirm">确定</string>
+    <string name="isp_subinventory_transfer_component_select_query">查询</string>
+
+    <!-- ISP SubInventory Transfer Lot No Select-->
+    <string name="isp_subinventory_transfer_lot_no_select_title">批次选择</string>
+    <string name="isp_subinventory_transfer_lot_no_select_lot_no">批次号</string>
+    <string name="isp_subinventory_transfer_lot_no_select_remaining_quantity">可用数量</string>
+    <string name="isp_subinventory_transfer_lot_no_select_confirm">确定</string>
+    <string name="isp_subinventory_transfer_lot_no_select_query">查询</string>
+
+    <!-- ISP SubInventory Transfer SubInventory Select-->
+    <string name="isp_subinventory_transfer_subinventory_select_title">子库选择</string>
+    <string name="isp_subinventory_transfer_subinventory_select_name">子库名称</string>
+    <string name="isp_subinventory_transfer_subinventory_select_confirm">确定</string>
+    <string name="isp_subinventory_transfer_subinventory_select_query">查询</string>
+
+    <!-- ISP SubInventory Transfer Project No Select-->
+    <string name="isp_subinventory_transfer_project_no_select_title">项目号选择</string>
+    <string name="isp_subinventory_transfer_project_no_select_project_no">项目号</string>
+    <string name="isp_subinventory_transfer_project_no_select_confirm">确定</string>
+    <string name="isp_subinventory_transfer_project_no_select_query">查询</string>
+
+    <!-- ISP SubInventory Transfer Wip Select-->
+    <string name="isp_subinventory_transfer_wip_select_title">工单号选择</string>
+    <string name="isp_subinventory_transfer_wip_select_wip">工单号</string>
+    <string name="isp_subinventory_transfer_wip_select_confirm">确定</string>
+    <string name="isp_subinventory_transfer_wip_select_query">查询</string>
+
+    <!-- ISP SubInventory Transfer Locator Select-->
+    <string name="isp_subinventory_transfer_locator_select_title">货位选择</string>
+    <string name="isp_subinventory_transfer_locator_select_name">货位</string>
+    <string name="isp_subinventory_transfer_locator_select_description">货位描述</string>
+    <string name="isp_subinventory_transfer_locator_select_confirm">确定</string>
+    <string name="isp_subinventory_transfer_locator_select_query">查询</string>
+
+    <!-- ISP Locator Select-->
+    <string name="isp_locator_select_title">货位选择</string>
+    <string name="isp_locator_select_subinventory">子库存</string>
+    <string name="isp_locator_select_queue">排列位</string>
+    <string name="isp_locator_select_description">排列位说明</string>
+    <string name="isp_locator_select_confirm">确定</string>
+    <string name="isp_locator_select_query">查询</string>
+
+    <!-- ISP Wip Select-->
+    <string name="isp_wip_select_title">工单选择</string>
+    <string name="isp_wip_select_wip">工单</string>
+    <string name="isp_wip_select_component">装配件</string>
+    <string name="isp_wip_select_component_description">装配件说明</string>
+    <string name="isp_wip_select_wip_type">工单分类</string>
+    <string name="isp_wip_select_wip_status">工单状态</string>
+    <string name="isp_wip_select_project_no">项目号</string>
+    <string name="isp_wip_select_confirm">确定</string>
+    <string name="isp_wip_select_query">查询</string>
+
+    <!-- ISP Component Select-->
+    <string name="isp_component_select_title">组件选择</string>
+    <string name="isp_component_select_component">组件</string>
+    <string name="isp_component_select_component_description">组件说明</string>
+    <string name="isp_component_select_uom">单位</string>
+    <string name="isp_component_select_operation">工序编号</string>
+    <string name="isp_component_select_required_quantity">需求数量</string>
+    <string name="isp_component_select_issued_quantity">已发数量</string>
+    <string name="isp_component_select_confirm">确定</string>
+    <string name="isp_component_select_query">查询</string>
+
+    <!-- ISP Bill Select-->
+    <string name="isp_bill_select_title">单据号选择</string>
+    <string name="isp_bill_select_bill">单据号</string>
+    <string name="isp_bill_select_organization">来源组织</string>
+    <string name="isp_bill_select_component">料件号</string>
+    <string name="isp_bill_select_component_description">料件号说明</string>
+    <string name="isp_bill_select_uom">单位</string>
+    <string name="isp_bill_select_batch">批次号</string>
+    <string name="isp_bill_select_project_no">项目号</string>
+    <string name="isp_bill_select_transaction_quantity">转移数量</string>
+    <string name="isp_bill_select_received_quantity">已接数量</string>
+    <string name="isp_bill_select_remaining_quantity">剩余数量</string>
+    <string name="isp_bill_select_confirm">确定</string>
+    <string name="isp_bill_select_query">查询</string>
+
+
+    <!-- ISP Purchase Receive Order Select-->
+    <string name="isp_purchase_receive_order_select_title">订单号选择</string>
+    <string name="isp_purchase_receive_order_select_order">请购单号</string>
+    <string name="isp_purchase_receive_order_select_line">请购行号</string>
+    <string name="isp_purchase_receive_order_select_shipment">发运号</string>
+    <string name="isp_purchase_receive_order_select_shipment_line">发运行号</string>
+    <string name="isp_purchase_receive_order_select_component">料件号</string>
+    <string name="isp_purchase_receive_order_select_component_description">规格型号</string>
+    <string name="isp_purchase_receive_order_select_uom">单位</string>
+    <string name="isp_purchase_receive_order_select_purchase_quantity">采购数量</string>
+    <string name="isp_purchase_receive_order_select_received_quantity">已收数量</string>
+    <string name="isp_purchase_receive_order_select_unreceived_quantity">未收数量</string>
+    <string name="isp_purchase_receive_order_select_project_no">项目号</string>
+    <string name="isp_purchase_receive_order_select_lotno">批次号</string>
+    <string name="isp_purchase_receive_order_select_wip">工单号</string>
+    <string name="isp_purchase_receive_order_select_confirm">确定</string>
+    <string name="isp_purchase_receive_order_select_query">查询</string>
+
+    <!-- ISP Purchase Receive SubInventory Select-->
+    <string name="isp_purchase_receive_subinventory_select_title">子库选择</string>
+    <string name="isp_purchase_receive_subinventory_select_name">子库名称</string>
+    <string name="isp_purchase_receive_subinventory_select_confirm">确定</string>
+    <string name="isp_purchase_receive_subinventory_select_query">查询</string>
+
+    <!-- ISP Purchase Receive Locator Select-->
+    <string name="isp_purchase_receive_locator_select_title">货位选择</string>
+    <string name="isp_purchase_receive_locator_select_name">货位</string>
+    <string name="isp_purchase_receive_locator_select_description">货位描述</string>
+    <string name="isp_purchase_receive_locator_select_confirm">确定</string>
+    <string name="isp_purchase_receive_locator_select_query">查询</string>
+
+    <!-- ISP Wip Query-->
+    <string name="isp_wip_query_title">ISP 工单对照关系</string>
+    <string name="isp_wip_query_wip_required_or_produce">生产方或需求方工单</string>
+    <string name="isp_wip_query_produce_organization">生产组织</string>
+    <string name="isp_wip_query_produce_wip">生产工单</string>
+    <string name="isp_wip_query_produce_project_no">项目号</string>
+    <string name="isp_wip_query_so">SO</string>
+    <string name="isp_wip_query_required_organization">需求组织</string>
+    <string name="isp_wip_query_required_wip">需求工单</string>
+    <string name="isp_wip_query_required_project_no">项目号</string>
+    <string name="isp_wip_query_pr">PR</string>
+    <string name="isp_wip_query">查询</string>
+</resources>

@@ -1,0 +1,181 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="Wo_Tag_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">#000</item>
+    </style>
+    
+    <style name="Wo_Original_Tag_Style" parent="Wo_Tag_Style">
+        <item name="android:textColor">#fff</item>
+    </style>
+    
+    <style name="Wo_Value_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/tv_value_background_style</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    
+    <style name="Wo_Charging_Tag_Style" parent="Wo_Tag_Style">
+        <item name="android:textColor">#000</item>
+    </style>
+    
+    <style name="Wo_Container_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="Wo_Container_Style1" parent="Wo_Container_Style">
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+    
+    <style name="Wo_Container_Style2" parent="Wo_Container_Style">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+    
+    <style name="Wo_Container_Style3" parent="Wo_Container_Style">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="Wo_Container_Style4" parent="Wo_Container_Style">
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <style name="Wo_Container_Style5" parent="Wo_Container_Style">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="Wo_Container_Style6" parent="Wo_Container_Style">
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+
+    <style name="Wo_Container_Normal" parent="Wo_Container_Style">
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+    
+    <style name="Wo_Input_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/borderstyle</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="EditText_Inventory_Compare_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/borderstyle</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Wo_Submit_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_biz_style</item>
+        <item name="android:textColor">@drawable/btn_biz_textcolor_style</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    
+    <!-- Main -->
+    <style name="Main_Biz_Select">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/btn_main_biz_style</item>
+        <item name="android:textColor">@drawable/btn_main_biz_textcolor_style</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+    
+    <style name="alert_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="dialog_blue_button" parent="android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">31dp</item>
+        <item name="android:background">@drawable/blue_button_background</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">21dp</item>
+        <item name="android:paddingRight">21dp</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+
+    <style name="Segment_Radio_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@drawable/fore_segment_radio</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="ISP_Query_Input_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_input_semi_round</item>
+        <item name="android:drawableRight">@drawable/img_input_query_icon</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ISP_Query_Input_Style2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_input_semi_round</item>
+        <item name="android:drawableRight">@drawable/img_input_query_icon</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>
