@@ -15,6 +15,7 @@ public class AppCommon {
 	public static final String APP_TEMP_DIRECTORY = 
 			Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator 
 			+ "HCP" + File.separator;
+
 	
 	static{
 		File appDirectory = new File(APP_TEMP_DIRECTORY);
